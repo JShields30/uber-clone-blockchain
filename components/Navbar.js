@@ -11,8 +11,9 @@ const style = {
     userImageContainer: `mr-2`,
     userImage: `h-10 w-10 mr-4 rounded-full p-px object-cover cursor-pointer`,
     loginButton: `flex items-center cursor-pointer rounded-full hover:bg-[#333333] px-4 py-1`
-
 };
+
+const currentAccount = '0x06a1b64860921a43A12312E2fd435A36Dc75dcEE';
 
 const Navbar = () => {
 	return (
@@ -33,7 +34,10 @@ const Navbar = () => {
                     width={40} 
                     height={40} />
                     </div>
-                    <div>0x00000....00000</div>
+
+                    <div>
+                        {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
+                    </div>
                 </div>
 		</div>
 	);
