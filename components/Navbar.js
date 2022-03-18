@@ -21,7 +21,7 @@ const Navbar = () => {
                 <div className={style.userImageContainer}>
                     <img src={avatar} width={50} height={50} />
                     </div>
-                    
+                    <div>0x00000....00000</div>
                 </div>
 		</div>
 	);
