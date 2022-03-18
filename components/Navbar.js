@@ -34,10 +34,13 @@ const Navbar = () => {
                     width={40} 
                     height={40} />
                     </div>
-
+                    {currentAccount ? (
                     <div>
                         {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
                     </div>
+                    ) : (
+                        <div>Please log in</div>
+                    )}
                 </div>
 		</div>
 	);
