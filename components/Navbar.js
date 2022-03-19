@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import avatar from '../temp/tiny_headshot.jpg'
+import { BsPerson } from 'react-icons/bs'
 
 const style = {
 	wrapper: `h-16 w-full bg-black text-white flex md:justify-around items -center px-60 z-20`,
@@ -39,7 +40,10 @@ const Navbar = () => {
                         {currentAccount.slice(0, 6)}...{currentAccount.slice(39)}
                     </div>
                     ) : (
-                        <div>Please log in</div>
+                        <div className={style.loginButton}>
+                            <BsPerson />
+                            <span className={style.loginText}>Log in</span>
+                            </div>
                     )}
                 </div>
 		</div>
