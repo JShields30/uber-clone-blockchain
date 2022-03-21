@@ -29,6 +29,13 @@ const LocationSelector = () => {
                 }`}
                 >
                 <div className={style.svgContainer}>
+                    <svg viewbox='0 0 24 24' width='1em' height='1em'>
+                        <path 
+                            fillRule='evenodd'
+                            clipRule='evenodd'
+                            d='m12 14a2 2 0 100-4 2 2 0 000 4zm5-2a5 5 0 11-10 0 5 5 0 0110 0z'                        
+                        />
+                        </svg>
                     </div>    
                 </div>
             </div>
