@@ -15,14 +15,20 @@ const style = {
 }
 
 const LocationSelector = () => {
-    const [inFocus, setInFocus] = useState('to')
+    const [inFocus, setInFocus] = useState('from')
 
   return (
     <div className={style.wrapper}>
         <div className={style.searchHeader}>
             {inFocus === 'from' ? 'Where can we pick you up?' : 'Where to?'}
             </div>
-            <div className={style.inputBoxes}></div>
+            <div className={style.inputBoxes}>
+                <div
+                className={`${style.inputBox} ${
+                    inFocus === 'from' ? style.focusedInputBox : ''
+                }`}
+                ></div>
+            </div>
         </div>
   )
 }
