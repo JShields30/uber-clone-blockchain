@@ -22,6 +22,7 @@ const LocationSelector = () => {
         <div className={style.searchHeader}>
             {inFocus === 'from' ? 'Where can we pick you up?' : 'Where to?'}
             </div>
+            <div className={style.inputBoxes}></div>
         </div>
   )
 }
