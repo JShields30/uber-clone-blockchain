@@ -25,9 +25,12 @@ const LocationSelector = () => {
             <div className={style.inputBoxes}>
                 <div
                 className={`${style.inputBox} ${
-                    inFocus === 'from' ? style.focusedInputBox : ''
+                    inFocus === 'from' && style.focusedInputBox
                 }`}
-                ></div>
+                >
+                <div className={style.svgContainer}>
+                    </div>    
+                </div>
             </div>
         </div>
   )
