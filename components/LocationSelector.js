@@ -12,7 +12,7 @@ const LocationSelector = () => {
   return (
     <div className={style.wrapper}>
         <div className={style.searchHeader}>
-            
+            {inFocus === 'from' ? 'Where can we pick you up?' : 'Where to?'}
             </div>
         </div>
   )
