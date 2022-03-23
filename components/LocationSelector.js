@@ -43,7 +43,9 @@ const LocationSelector = () => {
                     className={style.input} 
                     placeholder='Enter Pickup Location'
                     value={pickup}
-                    onChange={e => setPickup(e.target.value)} />
+                    onChange={e => setPickup(e.target.value)} 
+                    onFocus={() => setInFocus('from')}
+                    />
                 </div>
             </div>
         </div>
