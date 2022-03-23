@@ -52,7 +52,17 @@ const LocationSelector = () => {
                     className={`${style.inputBox} ${
                         inFocus === 'to' && style.focusedInputBox
                     }`}
-                ></div>
+                >
+                    <div className={style.svgContainer}>
+                        <svg viewBox='0 0 24 24' width='1em' height='1em'>
+                            <path
+                             fillRule='evenodd'
+                             clipRule='evenodd'
+                             d='M14 10h-4v4h4v-4zM7 7v10h10V7H7z'
+                            />
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
   )
