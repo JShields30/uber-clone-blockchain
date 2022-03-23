@@ -48,6 +48,11 @@ const LocationSelector = () => {
                     />
                 </div>
                 <div className={style.verticalLine}/>
+                <div
+                    className={`${style.inputBox} ${
+                        inFocus === 'to' && style.focusedInputBox
+                    }`}
+                ></div>
             </div>
         </div>
   )
