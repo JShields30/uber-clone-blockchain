@@ -16,6 +16,8 @@ const style = {
 
 const LocationSelector = () => {
     const [inFocus, setInFocus] = useState('from')
+    const [pickup, setPickup] = useState('')
+    const [dropoff, setDropoff] = useState('')
 
   return (
     <div className={style.wrapper}>
