@@ -47,6 +47,7 @@ const LocationSelector = () => {
                     onFocus={() => setInFocus('from')}
                     />
                 </div>
+                <div className={style.verticalLine}/>
             </div>
         </div>
   )
