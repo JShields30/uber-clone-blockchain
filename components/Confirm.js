@@ -4,7 +4,14 @@ const style = {}
 
 const Confirm = () => {
   return (
-    <div>Confirm</div>
+    <div className={style.wrapper}>
+        <div className={style.rideSelectorContainer}>{/*Ride Selector*/}</div>
+        <div className={style.confirmButtonContainer}>
+            <div className={style.confirmButtonContainer}>
+            <div className={style.confirmButton}>Confirm UberX</div>
+            </div>
+        </div>
+    </div>
   )
 }
 
