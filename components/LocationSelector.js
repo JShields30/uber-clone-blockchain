@@ -19,6 +19,7 @@ const LocationSelector = () => {
     const [pickup, setPickup] = useState('')
     const [dropoff, setDropoff] = useState('')
 
+    console.log({pickup: pickup, dropoff: dropoff});
   return (
     <div className={style.wrapper}>
         <div className={style.searchHeader}>
