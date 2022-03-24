@@ -62,6 +62,13 @@ const LocationSelector = () => {
                             />
                         </svg>
                     </div>
+                    <input 
+                        className={style.input}
+                        placeholder='Where to?'
+                        value={dropoff}
+                        onChange={e => setDropoff(e.target.value)}
+                        onFocus={() => setInFocus('to')}
+                    />
                 </div>
             </div>
         </div>
