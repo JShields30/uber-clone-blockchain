@@ -1,8 +1,14 @@
 import React from 'react'
 
+const style = {
+
+}
+
 const RideSelector = () => {
   return (
-    <div>RideSelector</div>
+    <div className={style.wrapper}>
+        <div className={style.title}></div>
+    </div>
   )
 }
 
