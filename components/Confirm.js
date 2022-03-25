@@ -1,6 +1,11 @@
 import React from 'react'
 
-const style = {}
+const style = {
+    wrapper: `flex h-full flex flex-col justify-between`,
+    rideSelectorContainer: `h-full flex flex-col overflow-scroll`,
+    confirmButtonContainer: `border-t-2 cursor-pointer z-10`,
+    confirmButton: `bg-block text-white m-4 py-4 text-center text-xl`
+}
 
 const Confirm = () => {
     const storeTripDetails = async () => {}
