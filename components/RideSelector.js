@@ -1,21 +1,46 @@
-import React from 'react'
-import uberx  from '../../assets/images/uberx.png'
-import uberBlack from '../../assets/images/uberBlack.png'
-import uberBlackSuv from '../../assets/images/uberBlackSuv.png'
-import uberSelect from '../../assets/images/uberSelect.png'
-import uberXL from '../../assets/images/uberXL.png'
+import uberX from '../assets/images/uberX.png';
+import uberBlack from '../assets/rides/uberBlack.png';
+import uberBlackSuv from '../assets/rides/uberBlackSuv.png';
+import uberSelect from '../assets/rides/uberSelect.png';
+import uberXL from '../assets/rides/uberXL.png';
 
-const style = {}
+const style = {};
 
-const carList = []
+const carList = [
+	{
+		service: 'UberX',
+		iconUrl: uberX,
+		priceMultiplier: 1,
+	},
+  {
+		service: 'UberBlack',
+		iconUrl: uberBlack,
+		priceMultiplier: 1.5,
+	},
+  {
+		service: 'UberBlackSuv',
+		iconUrl: uberBlackSuv,
+		priceMultiplier: 1.5,
+	},
+  {
+		service: 'UberSelect',
+		iconUrl: uberSelect,
+		priceMultiplier: 1.5,
+	},
+  {
+		service: 'UberXL',
+		iconUrl: uberXL,
+		priceMultiplier: 1.5,
+	}
+];
 
 const RideSelector = () => {
-  return (
-    <div className={style.wrapper}>
-        <div className={style.title}></div>
-        <div className={style.carList}></div>
-    </div>
-  )
-}
+	return (
+		<div className={style.wrapper}>
+			<div className={style.title}></div>
+			<div className={style.carList}></div>
+		</div>
+	);
+};
 
-export default RideSelector
+export default RideSelector;
