@@ -35,6 +35,8 @@ const carList = [
 	}
 ];
 
+const basePrice = 1542
+
 const RideSelector = () => {
 	return (
 		<div className={style.wrapper}>
@@ -53,7 +55,7 @@ const RideSelector = () => {
 				<div className={style.time}>5 minutes away</div>
 			</div>
 			<div className={style.priceContainer}>
-				
+			{((basePrice / 10 ** 5) * car.priceMultiplier).toFixed(5)}
 			</div>
           </div>
         ))}
