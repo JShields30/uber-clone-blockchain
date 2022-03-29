@@ -48,6 +48,13 @@ const RideSelector = () => {
             height={50}
             width={50}
             />
+			<div className={style.carDetails}>
+				<div className={style.service}>{car.service}</div>
+				<div className={style.time}>5 minutes away</div>
+			</div>
+			<div className={style.priceContainer}>
+				
+			</div>
           </div>
         ))}
       </div>
