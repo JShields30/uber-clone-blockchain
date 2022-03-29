@@ -4,6 +4,7 @@ import uberBlackSuv from '../assets/rides/uberBlackSuv.png';
 import uberSelect from '../assets/rides/uberSelect.png';
 import uberXL from '../assets/rides/uberXL.png';
 import Image from 'next/Image'
+import ethLogo from '../assets/eth-logo.png';
 
 const style = {};
 
@@ -55,7 +56,10 @@ const RideSelector = () => {
 				<div className={style.time}>5 minutes away</div>
 			</div>
 			<div className={style.priceContainer}>
+				<div className={style.price}>
 			{((basePrice / 10 ** 5) * car.priceMultiplier).toFixed(5)}
+			</div>
+			<Image src={ethLogo} height={25} width={40} />
 			</div>
           </div>
         ))}
